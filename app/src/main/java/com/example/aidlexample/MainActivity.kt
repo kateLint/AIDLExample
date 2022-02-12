@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     fun bingToAidlService(){
 
-       var aidlServiceIntent = Intent("connection_to_aild_service")
+       var aidlServiceIntent = Intent(TAG)
         var explicitIntent = convertImplicitIntentToExplicitIntent(aidlServiceIntent, this)
         bindService(explicitIntent,mConnection, BIND_AUTO_CREATE)
     }
